@@ -88,7 +88,7 @@ extern uint8_t g_log_buf_cur;
                 } \
             } \
         } \
-     } while(0)
+    } while(0)
 
 #define LOG_NOARG(log_id_, fmt_) \
     do { \
@@ -113,7 +113,7 @@ extern uint8_t g_log_buf_cur;
                 } \
             } \
         } \
-     } while(0)
+    } while(0)
 
 #else 
 #define LOG(log_id_, fmt_, ...) \
@@ -127,7 +127,7 @@ extern uint8_t g_log_buf_cur;
                 fprintf(stdout, "%s "fmt_, log_format_timestamp(), ##__VA_ARGS__); \
             } \
         } \
-     } while(0)
+    } while(0)
 
 #define LOG_NOARG(log_id_, fmt_) \
     do { \
@@ -140,7 +140,7 @@ extern uint8_t g_log_buf_cur;
                 fprintf(stdout, "%s "fmt_, log_format_timestamp()); \
             } \
         } \
-     } while(0)
+    } while(0)
 #endif
 
 
